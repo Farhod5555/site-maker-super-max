@@ -1,0 +1,497 @@
+{% extends 'news/base.html' %}
+{% load static %}
+
+{% block title %}
+O‘IHHQJF
+{% endblock title %}
+
+{% block content %}
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1>O’ZBEKISTON ISTE’MOLCHILAR HUQUQLARINI HIMOYA QILISH JAMIYATLARI FEDERATSIYASI</h1>
+            <p>BIZ ISTE`MOLCHILAR HUQUQLARINI HIMOYA QILISH JAMIYATLARI FEDERATSIYASIMIZ</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Biz haqimizda</a>
+              <a href="https://www.youtube.com/watch?v=iUoHqyTGtKc" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>«O‘IHHQJF»</span></a>
+            </div>
+            <br>
+            <div  class="form-container">
+              <form method="GET" action="{% url 'search_blog' %}">
+                  <div style="height: 50px;" class="input-group mb-3 shadow-sm rounded-pill overflow-hidden">
+                      <input name="search" type="text" class="form-control border-0 py-2 px-4" placeholder="Qidiruv" aria-label="Search term">
+                      <button class="btn btn-success px-4 search-btn" type="submit">
+                          <i class="bi bi-search animated-icon"></i>
+                      </button>
+                  </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+ 
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Biz haqimizda<br></span>
+        <h2>Biz haqimizda</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/about-bg.png' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=iUoHqyTGtKc" class="glightbox pulsating-play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>O’ZBEKISTON ISTE’MOLCHILAR HUQUQLARINI HIMOYA QILISH JAMIYATLARI FEDERATSIYASI</h3>
+            <h4>BIZ ISTE`MOLCHILAR HUQUQLARINI HIMOYA QILISH JAMIYATLARI FEDERATSIYASIMIZ</h4>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>FAOLYATIMIZ -
+
+                1999 yildan</span></li>
+            </ul>
+            <p>
+              O‘zbekiston Respublikasida iste’molchilar huquqlarini himoya qilish harakati 1996-yil yil 26-aprelda O‘zbekiston Respublikasi Oliy Majlisi tomonidan qabul qilingan “Iste’molchilar huquqlarini himoya qilish to‘g‘risida”gi qonunining 30 – moddasiga muvofiq 1997-yilda O‘zbekiston aholisini sifatsiz mahsulot va xizmatlardan himoya qilishga o‘z ulushini qo‘shish va o‘z imkoniyatlarini birlashtirishga qaror qilgan bir qator hamfikrlar tashabbusi bilan poytaxtimizning Shayxontohur tumanida iste’molchilar huquqlarini himoya qilish ijtimoiy harakati O‘zbekiston iste’molchilar huquqlarini himoya qilish jamiyati shaklida tashkil topdi va 1999-yili Respublika iste’molchilar huquqlarini himoya qilish jamiyati sifatida ro‘yxatdan o‘tdi. Bu vaqtda respublikamizning 7 ta viloyatida hududiy jamiyatlar tashkil topdi. 2000-yil O‘zbekiston iste’molchilar huquqlarini himoya qilish jamiyatining navbatdan tashqari II s’ezdida jamiyatga O‘zbekiston iste’molchilar huquqlarini himoya qilish jamiyatlari federatsiyasi nomi berildi. Bu vaqtda 9 ta viloyat va Toshkent shahrida jamiyatlar tashkil etilgan edi. Faol iste’molchilarning sa’y-harakatlari tufayli ushbu jamoat tashkilotiga davlat tarafidan alohida e’tibor berilib, qo‘llab-quvvatlash maqsadida O‘zbekiston Respublikasi Vazirlar Mahkamasi tomonidan 2002-yil 28-noyabrdan "Iste’molchilar huquqlarini Himoya qilishda jamoatchilik ishtirokini kengaytirish chora-tadbirlari to‘g‘risida"gi 414-qarorining qabul qilinishi mazkur ijtimoiy harakat taraqqiyotida yangi bosqichni boshlab berdi. Shu bilan birga, mazkur qaror bilan Iste’molchilar huquqlarini himoya qilish jamiyatlarining tashkiliy tuzilmasi hamda Iste’molchilar huquqlarini himoya qilish jamiyatlari federatsiyasi ijro etuvchi apparatining tuzilmasi ma’qullandi. 2003-yil 17-yanvardagi federatsiyaning III ta’sis konferensiyasi Qoraqalpog‘iston Respublikasi Federatsiyasi, Toshkent shahri hamda respublikaning 12 viloyatidagi hududiy birlashmalarni birlashtirdi.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>USTAVI:</span>
+        <h2>1.
+          Umumiy shartlar</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">1</i>
+              </div>
+             
+              <p>O‘zbekiston iste’molchilar huquqlarini himoya qilish jamiyatlari federatsiyasi (keyingi o‘rinlarda – “Federatsiya” deb yuritiladi) O‘zbekiston iste’molchilar huquqlarini himoya qilish ijtimoiy harakatini har tomonlama rivojlantirish yo‘li bilan iste’molchilarning huquqiy himoyalanish darajasini oshirishning ta’sirchan mexanizmlarini joriy etish maqsadida jismoniy shaxslar tomonidan ixtiyoriy ravishda tashkil etilgan bo‘lib, o‘zini o‘zi boshqaradigan nodavlat notijorat tashkilotidir. Uning tashkiliy-huquqiy shakli jamoat birlashmasi.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">2</i>
+              </div>
+           
+              <p>O‘zbekiston iste’molchilar huquqlarini himoya qilish jamiyatlari federatsiyasi O‘zbekiston Respublikasi Konstitutsiyasi, «Nodavlat notijorat tashkilotlari to‘g‘risida», «O‘zbekiston Respublikasida jamoat birlashmalari to‘g‘risida» va «Iste’molchilar huquqlarini himoya qilish to‘g‘risida»gi qonunlari hamda O‘zbekiston Respublikasi Vazirlar Mahkamasining 2002 yil 28 noyabrdagi «Iste’molchilar huquqlarini himoya qilishda jamoatchilik ishtirokini kengaytirish chora-tadbirlari to‘g‘risida»gi 414-sonli qarori, shuningdek, nodavlat notijorat tashkilotlari faoliyatini tartibga soluvchi boshqa qonun hujjatlari asosida tashkil etilgan.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">3</i>
+              </div>
+             
+              <p>Federatsiya va uning tashkiliy hududiy tuzilmalari o‘z faoliyatini O‘zbekiston Respublikasining amaldagi qonunchiligi va mazkur Ustav asosida amalga oshiradi. Ushbu Ustav Federatsiya va uning tashkiliy hududiy tuzilmalari bo‘lgan iste’molchilar huquqlarini himoya qilish jamiyatlari va ularning hududiy birlashmalari uchun yagona ta’sis hujjati hisoblanadi.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">4</i>
+              </div>
+            
+              <p>Federatsiya va uning tashkiliy hududiy tuzilmalari tegishli adliya idoralarida hisob ro‘yxatidan o‘tgan vaqtdan boshlab yuridik shaxs maqomiga ega bo‘ladilar. Federatsiya va uning tashkiliy hududiy tuzilmalari o‘z mulkiga ega bo‘ladi, undan foydalanadi va uni boshqaradi, o‘z nomidan shartnomalar tuzish, mulkiy va nomulkiy huquqga ega bo‘lish, majburiyatlarni bajarish, xo‘jalik, fuqarolik va boshqa sudlarda da’vogar va javobgar bo‘lib qatnashish huquqiga ega bo‘lib, o‘z buxgalteriya balansiga, dumaloq muhr va to‘rtburchak shtampiga ega bo‘lib, O‘zbekiston Respublikasi banklarida so‘m va valyuta hisob raqamlarini ochib faoliyat ko‘rsatadi. Federatsiya va uning tashkiliy hududiy tuzilmalari o‘z majburiyatlari bo‘yicha unga tegishli mulklar va aktivlar chegarasida ma’sul hisoblanib, bu mulklar va aktivlar O‘zbekiston Respublikasining amaldagi qonunchiligiga asosan to‘lov va undirish shaklida idora etilishi mumkin. Federatsiya va uning tashkiliy hududiy tuzilmalari davlat va (yoki) uning organlari majburiyatlari bo‘yicha, davlat esa o‘z navbatida Federatsiya va uning tashkiliy hududiy tuzilmalarining majburiyatlari bo‘yicha javobgar emas.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">5</i>
+              </div>
+            
+              <p>Federatsiya o‘z faoliyatini O‘zbekiston Respublikasining butun hududida amalga oshiradi.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">6</i>
+              </div>
+              
+              <p>Federatsiya amaldagi qonunchilik asosida belgilangan va ushbu Ustavda ko‘rsatilgan tartibda o‘z vakolatxona va filiallarini, shuningdek, ustav maqsad vazifalarini amalga oshirish maqsadida tadbirkorlik tuzilmalarini ochish huquqiga ega. Vakolatxona va filiallar, tadbirkorlik tuzilmalari ushbu Ustav, vakolatxona va filiallar, tadbirkorlik tuzilmalari haqidagi Nizom asosida ish yuritadi.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">7</i>
+              </div>
+            
+              <p>Federatsiyaning nomi: O‘zbek tilida: «O‘zbekiston iste’molchilar huquqlarini himoya qilish jamiyatlari federatsiyasi», qisqacha – «O‘IHHQJF»; Rus tilida: «Federatsiya obщestv zaщitы prav potrebiteley Uzbekistana», qisqacha – «FOZPPU»; Ingliz tilida: «Federation of societies on consumer rights protection of Uzbekistan », qisqacha –«FSCRPU».</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">8</i>
+              </div>
+              
+              <p>Federatsiya manzili: Toshkent shahri – 100011, Navoiy ko‘chasi, 18 A uy.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">9</i>
+              </div>
+             
+              <p>Federatsiya Ustavi bilan har bir shaxs tanishishi mumkin.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>USTAVI:</span>
+        <h2>2.
+          Federatsiya maqsadi va vazifalari</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">1</i>
+              </div>
+             
+              <p>Federatsiya va uning tashkiliy hududiy tuzilmalari faoliyatining asosiy maqsadi O‘zbekiston iste’molchilar huquqlarini himoya qilish ijtimoiy harakatini har tomonlama rivojlantirish yo‘li bilan iste’molchilarning huquqiy himoyalanish darajasini oshirishning ta’sirchan mexanizmlarini joriy etishdan iborat.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">2</i>
+              </div>
+           
+              <p>Federatsiya va uning tashkiliy hududiy tuzilmalari faoliyatining asosiy yo‘nalishlari iste’molchilarni qonuniy huquq va manfaatlarini himoya qilishga yo‘naltirilgan va quyidagilardan iborat: aholi o‘rtasida iste’molchilar huquqlarini himoya qilish to‘g‘risidagi amaldagi qonun hujjatlarini keng targ‘ib qilish; iste’molchilar huquqlari va manfaatlarini himoya qilish chora-tadbirlarini amalga oshirish; ichki bozorda sotilayotgan iste’mol tovarlarining zarur sifatini va xavfsizligini, iste’molchilar huquqlarini himoya qilish to‘g‘risidagi qonun hujjatlarining boshqa talablarini ta’minlash monitoringlarini qonunchilikda belgilangan tartibda o‘tkazish; aholining iste’mol madaniyatini oshirishga doir ma’rifiy ishlarni olib borish; iste’molchilar huquqlarini himoya qilishning ta’sirchan mexanizmlarini yaratishda davlat boshqaruvi, fuqarolarning o‘zini o‘zi boshqarish organlari, nazorat qiluvchi organlar, ommaviy axborot vositalari bilan birgalikda ish olib borish va o‘zaro hamkorlik qilish.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">3</i>
+              </div>
+             
+              <p>Federatsiya va uning tashkiliy hududiy tuzilmalari o‘z faoliyatining belgilangan yo‘nalishlarini amalga oshirish uchun quyidagi faoliyat turlarini amalga oshiradi: iste’molchilar huquqlarini himoya qilish huquqiy bazasini tashkil etish va iste’mol bozorini tartibga solish bo‘yicha davlat siyosatini amalga oshirishda ishtirok etish yo‘li bilan Federatsiya a’zolari bo‘lgan iste’molchilarning manfaatlarini davlat, boshqaruv, nazorat va sud organlarida ifoda etish va himoya qilish; iste’molchilar huquqlarini himoya qilish borasida jamoatchilik fikrini o‘rganish va shakllantirish; seminarlar, davra suhbatlari va uchrashuvlar hamda aholi o‘rtasida ommaviy tadbirlarni tashkil etish orqali iste’molchilarning huquqiy bilim saviyasini oshirish; tovar va xizmatlarni to‘g‘ri tanlash uchun zarur bo‘lgan haqqoniy axborotlar bilan iste’molchilarni ta’minlash; tovar va xizmatlarning sifati va xavfsizligini mustaqil ekspertizasini tashkil etish; tovar va xizmatlarning narx(tarif)lari, standartlari, hamda sifati va xavfsizligini nazorat qilish tizimini tartibga solish dasturlari bo‘yicha takliflar tayyorlash; qonunchilikda belgilangan tartibda iste’molchilar huquqlarini himoya qilish to‘g‘risidagi qonun hujjatlari hamda savdo, maishiy, kommunal va boshqa xizmatlar ko‘rsatish qoidalari talablarini ta’minlash monitoringlarini, iste’molchilar huquqlarini buzilishi bo‘yicha mustaqil ekspertizalarni, qonunchilikda belgilangan tartibda, o‘tkazish va huquqlar buzilishi yuzasidan ma’lumotnomalar tuzish; tegishli mutaxassislarni jalb qilgan holda iste’molchilar huquqlarini himoya qilish borasidagi muammolarni o‘rganish bo‘yicha jamoatchilik fikrini o‘rganish va ijtimoiy tadqiqotlar, so‘rovnomalar o‘tkazish; iste’molchilar va ishlab chiqaruvchi (sotuvchi, xizmat ko‘rsatuvchi)lar o‘rtasidagi o‘zaro munosobatlarni ogohlantirish tamoyilida tartibga solishni ta’minlashning ta’sirchan mexanizmlarini tadbiq etish; noto‘g‘ri reklamalardan aholini ogohlantirish hamda ularni himoya qilish; O‘zbekiston Respublikasi iste’molchilar huquqlarini himoya qilish to‘g‘risidagi qonun hujjatlari talablarini buzgan korxona va tashkilotlarga qonunchilik talablarini buzilishini bartaraf etish to‘g‘risida murojaat etish; tovar (ish, xizmat)larni sifatini oshirish hamda inson hayoti, sog‘lig‘iga, mulkiga va atrof-muhitga xavf tug‘diruvchi tovar (ish,xizmat)larni ishlab chiqarish va sotishni to‘xtatish bo‘yicha vakolatli davlat idoralari va tashkilotlariga takliflar tayyorlash va kiritish; iste’molchilar huquqlarini himoya qilish to‘g‘risidagi qonun hujjatlari talablari hamda o‘rnatilgan xavfsizlik talablariga mos bo‘lmagan mahsulotlarni ishlab chiqarish va sotish uchun aybdor bo‘lgan shaxslarni javobgarlikka tortish bo‘yicha materiallarni sud, prokuratura va vakolatli davlat idoralariga kiritish; iste’molchilar huquqlari va manfaatlari bo‘yicha ilmiy tadqiqotlar, konferensiyalarni tashkil etish va o‘tkazish; o‘z a’zolarini axborot ta’minotini, ular o‘rtasida o‘zaro axborot almashuvini tashkil etish va ular faoliyatini muvofiqlashtirish; tegishli ruxsatnomaga (litsenziyaga) ega bo‘lgandan so‘ng belgilangan tartibda matbaa-nashriyot faoliyatini, shuningdek, davriy nashrlarni, ilmiy-ommaviy qo‘llanmalar, plakatlar, bukletlar, sharhlar va boshqa nashrlarni ishlab chiqish va nashr etish; eng zukko va iqtidorli iste’molchilarni, eng yaxshi tashkiliy hududiy tuzilmani hamda tovarlar (ishlar va xizmatlar)ning eng yaxshi ishlab chiqaruvchilarini aniqlashga va rag‘batlantirishga yo‘naltirilgan tanlovlar, viktorinalar, olimpiadalar va boshqa tadbirlarni tashkil etish; iste’molchilarning huquqlarini himoya qilish bo‘yicha xodimlarni tayyorlash va qayta tayyorlash dasturlarini ishlab chiqish va amalga oshirish; iste’molchilar huquqlarini himoya qilish to‘g‘risidagi qonun hujjatlarini takomillashtirish va uning talablarini bajarilishini ta’minlashda davlat boshqaruv idoralari bilan hamkorlik qilish; xalqaro jamoat, moliyaviy tashkilotlari va kompaniyalari bilan hamkorlikda turli loyiha va dasturlarni ishlab chiqish va amalga oshirish, shuningdek iste’molchilarning xalqaro tashkilotlarida ishtirok etish; o‘z faoliyat yo‘nalishlarini amalga oshirishga yo‘naltirilgan Ustav faoliyati doirasida tadbirkorlik faoliyatini qonunchilikda belgilangan tartibda amalga oshirish; mazkur Ustav va qonun hujjatlarida belgilangan tartib va qoidalarga zid bo‘lmagan boshqa faoliyat turlarini amalga oshiradi. Maxsus ruxsatnoma (litsenziya) talab kilinadigan faoliyat turlari maxsus ruxsatnoma (litsenziya) olingandan sung amalga oщiriladi.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="">4</i>
+              </div>
+            
+              <p>Federatsiyaning huquqlari: bank muassasalarida o‘z hisob raqamini ochish; mazkur Ustav doirasida o‘z faoliyatini tashkil etish uchun hududiy tuzilmalarini, filial va vakolatxonalar, tadbirkorlik tuzilmalarini ochish hamda boshqa yuridik shaxslarning ta’sischisi bo‘lish; O‘zbekiston Respublikasi hududida va chet davlatlarda yuridik va jismoniy shaxslar bilan qonunchilikka va mazkur Ustavga zid bo‘lmagan bitimlar va boshqa yuridik kelishuvlarni tuzish; o‘z nomidan va boshqa shaxslar nomidan sudlarda da’vogar va javobgar sifatida qatnashish; bino va inshootlarni, asbob-uskunalar, transport vositalari, inventar, xom-ashyo va boshqa ko‘chmas mulklarni qurish, xarid qilish, sotish, foydalanishga yoki ijaraga olish hamda o‘z mulkini balansdan chiqarish; o‘z faoliyati dastur va rejalarini mustaqil ishlab chiqish va tasdiqlash; Federatsiya tashkiliy strukturasini belgilash, ijro etuvchi organ shtat xodimlarini tashkil etish, ish haqi miqdori va shaklini hamda xodimlarni moddiy rag‘batlantirish masalalarini belgilash; iste’molchilar huquqlarini himoya qilish ijtimoiy harakatini qo‘llab quvvatlash maqsadida maxsus jamg‘armalarni, shu jumladan davlat moliyaviy yordami hisobidan, tashkil etish; o‘z faoliyati yo‘nalishlari bo‘yicha shartnoma va boshqa fuqarolik-huquqiy kelishuvlar asosida korxona va tashkilotlarni hamda fuqarolarni ishga jalb etish.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+<style>
+  .divbordershadovbig{
+    background-color: var(--surface-color);
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    right: 20px;
+    padding: 20px 15px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10%;
+  }
+</style>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>So'ngi yangiliklar</span>
+        <h2>So'ngi yangiliklar</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Barchasi</li>
+            <li data-filter=".filter-app">“Iste’mol madaniyati” gazetasi</li>
+            <li data-filter=".filter-product">Yangiliklar</li>
+            <li data-filter=".filter-branding">O'tkazilgan tadbirlardan fotolavhalar</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            {% for gazet in gazeta %}
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="{{ gazet.get_absolute_url }}"><img style="height: 300px; width: 100%;" src="{{gazet.image.url}}" class="img-fluid" alt=""></a>
+              <div class="divbordershadovbig">
+                <h6><a href="{{ gazet.get_absolute_url }}">“Iste’mol madaniyati” gazetasi</a></h6>
+                <p><a href="{{ gazet.get_absolute_url }}">{{gazet.title}}</a></p>
+                <a href="{{gazet.image.url}}" title="{{gazet.title}}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ gazet.get_absolute_url  }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            {%endfor%}
+            {% for yangi in yangilik%}
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="{{ yangi.get_absolute_url }}"><img style="height: 300px; width: 100%;" src="{{yangi.image.url}}" class="img-fluid" alt=""></a>
+              <div class="divbordershadovbig">
+                <h6> <a href="{{ yangi.get_absolute_url }}">Yangiliklar</a></h6>
+                <p> <a href="{{ yangi.get_absolute_url }}">{{yangi.title}}</a></p>
+                <a href="{{yangi.image.url}}" title="{{yangi.title}}" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ yangi.get_absolute_url  }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            {%endfor%}
+            {% for tadbir in tadbirlar%}
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <a href="{{ tadbir.get_absolute_url }}"><img style="height: 300px; width: 100%;" src="{{tadbir.image.url}}" class="img-fluid" alt=""></a>
+              <div class="divbordershadovbig">
+                <h6> <a href="{{ tadbir.get_absolute_url }}">O'tkazilgan tadbirlardan fotolavhalar</a></h4>
+                <p> <a href="{{ tadbir.get_absolute_url }}">{{tadbir.title}}</a></p>
+                <a href="{{tadbir.image.url}}" title="{{tadbir.title}}" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ tadbir.get_absolute_url  }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            {%endfor%}
+           
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+<!-- Valyuta Kurslari Section -->
+<section id="currency-rates" class="testimonials section light-background">
+  <div class="container section-title" data-aos="fade-up">
+    <span>Valyuta Kurslari</span>
+    <h2>Rasmiy Valyuta Kurslari</h2>
+    <p>O'zbekiston Markaziy Banki tomonidan belgilangan eng so'nggi kurslar</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    {% if currency_rates %}
+    <div class="swiper currency-swiper">
+      <div class="swiper-wrapper">
+        {% for rate in currency_rates %}
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="currency-icon mb-3">
+              {% if rate.code == 'USD' %}
+                <i class="bi bi-currency-dollar fs-1"></i>
+                <img src="https://flagcdn.com/w80/us.png" alt="">
+              {% elif rate.code == 'EUR' %}
+                <i class="bi bi-currency-euro fs-1"></i>
+                <img src="https://flagcdn.com/w80/de.png" alt="">
+              {% elif rate.code == 'RUB' %}
+              <i class="bi bi-ruble fs-1">₽</i>
+              <img src="https://flagcdn.com/w80/ru.png              " alt="">
+              {% elif rate.code == 'GBP' %}
+                <i class="bi bi-currency-pound fs-1"></i>
+                <img src="https://flagcdn.com/w80/gb.png
+
+                " alt="">
+              {% elif rate.code == 'CNY' %}
+                <i class="bi bi-currency-yen fs-1"></i>
+                <img src="https://flagcdn.com/w80/cn.png" alt="">
+              {% endif %}
+            </div>
+            <h3>{{ rate.code }}</h3>
+            <h4>{{ rate.name }}</h4>
+            <h1 class="rate-value fs-4 fw-bold my-2">{{ rate.rate|floatformat:2 }} so'm</p>
+            <h1 class="rate-change {% if rate.diff > 0 %}text-success{% else %}text-danger{% endif %} mb-0">
+              {% if rate.diff > 0 %}+{% endif %}{{ rate.diff|floatformat:2 }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    {% else %}
+    <div class="alert alert-warning text-center py-3">
+      <i class="bi bi-exclamation-triangle me-2"></i>
+      Valyuta kurslari hozircha mavjud emas
+    </div>
+    {% endif %}
+    <div class="text-end mt-2">
+      <small class="text-muted">Yangilandi: {{ rates_last_update }}</small>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS initialization -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Currency rates swiper
+  new Swiper('.currency-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
+  });
+});
+</script>
+    <!-- Call To Action Section -->
+    
+    
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+    
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <h3><i style="width: 40px;" class="fas fa-map-marker-alt"></i></h3>
+                <div>
+                  <h3>Manzil</h3>
+                  <p>Toshkent shahri, Islom Karimov Ko'chasi 55 uy</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <h3><i style="width: 40px;" class="fas fa-phone-alt"></i></h1>
+                <div>
+                  <h3>Telefon</h3>
+                  <p>+998(71)2391404</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <h3><i style="width: 40px;" class="fas fa-envelope"></i></h3>
+                <div>
+                  <h3>Email</h3>
+                  <p>fozppuz@mail.ru</p>
+                </div>
+              </div><!-- End Info Item -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <h3><i style="width: 40px;" class="fas fa-robot"></i></h3>
+                <div>
+                  <h3>Telegram Bot</h3>
+                  <a href="https://t.me/PotrebitelUz_bot"><p>PotrebitelUz_bot</p></a>
+                </div>
+              </div><!-- End Info Item -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <h3><i style="width: 40px;" class="fab fa-telegram-plane"></i></h3>
+                <div>
+                  <h3>Telegram</h3>
+                  <a href="https://t.me/istemolchi1"><p>O‘zbekiston iste'molchilar federatsiyasi</p></a>
+                </div>
+              </div><!-- End Info Item -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <h3><i style="width: 40px;" class="fab fa-facebook"></i></h3>
+                <div>
+                  <h3>Facebook</h3>
+                  <a href="https://www.facebook.com/istemolchimatbuot"><p>Matbuot xizmati / Пресс-служба / Press Service </p></a>
+                </div>
+              </div><!-- End Info Item -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <h3><i style="width: 40px;" class="fab fa-youtube"></i></h3>
+                <div>
+                  <h3>Youtube</h3>
+                  <a href="https://www.youtube.com/@ozodquvondiqov"><p>ISTE`MOLCHI</p></a>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad11241089ae5e4ea5d8b1a9851adff2455b0a54a1feaefa4c06d6bfd957c75e2&source=constructor" frameborder="0" style="border:0; width: 100%; height: 500px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+       
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  {% endblock content %}

@@ -1,0 +1,106 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% block title %}Qidiruv Natijalari{% endblock title %}
+{% block content %}
+
+<section  class="team section">
+    <div class="">
+        <div class="container section-title" data-aos="fade-up">
+            {% if total >= 1 %}
+    <h1>Qidiruv Natijalari: {{ total }} ta yangilik topildi</h1>
+{% else %}
+    <h1>Hech qanday yangilik topilmadi.</h1>
+{% endif %}
+
+</div><!-- Sarlavha Tugadi -->
+<br>
+<div class="container">
+    <div class="row gy-4">
+
+        <div  class="form-container">
+          <form method="GET" action="{% url 'search_blog' %}">
+              <div style="height: 50px;" class="input-group mb-3 shadow-sm rounded-pill overflow-hidden">
+                  <input name="search" type="text" class="form-control border-0 py-2 px-4" placeholder="Qidiruv" aria-label="Search term">
+                  <button class="btn btn-success px-4 search-btn" type="submit">
+                      <i class="bi bi-search animated-icon"></i>
+                  </button>
+              </div>
+          </form>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            <div class="row gy-5">
+                {% for new in posts %}
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <div class="pic">
+                            <a href="{{ new.get_absolute_url }}">
+                                <img style="height: 300px; width: 100%; object-fit: cover;" 
+                                     src="{{ new.image.url }}" 
+                                     class="img-fluid" 
+                                     alt="{{ new.title }}">
+                            </a>
+                        </div>
+                        <div class="member-info">
+                            <h4><a href="{{ new.get_absolute_url }}">{{ new.title }}</a></h4>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Sahifalash tugmalari -->
+            {% if posts.paginator.num_pages > 1 %}
+            <div class="row mt-4">
+                <div class="col-12">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            {% if posts.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?search={{ query|urlencode }}&page=1" aria-label="Birinchi">
+                                        <span aria-hidden="true">&laquo;&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?search={{ query|urlencode }}&page={{ posts.previous_page_number }}" aria-label="Oldingi">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+
+                            {% for num in posts.paginator.page_range %}
+                                {% if posts.number == num %}
+                                    <li class="page-item active">
+                                        <a class="page-link" href="?search={{ query|urlencode }}&page={{ num }}">{{ num }}</a>
+                                    </li>
+                                {% elif num > posts.number|add:'-3' and num < posts.number|add:'3' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?search={{ query|urlencode }}&page={{ num }}">{{ num }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if posts.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?search={{ query|urlencode }}&page={{ posts.next_page_number }}" aria-label="Keyingi">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?search={{ query|urlencode }}&page={{ posts.paginator.num_pages }}" aria-label="Oxirgi">
+                                        <span aria-hidden="true">&raquo;&raquo;</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+       
+    </div>
+</section>
+
+{% endblock content %}
