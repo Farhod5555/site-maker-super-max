@@ -1,0 +1,12 @@
+✔ | ❌              |❌ => ✔|
+
+1. news all qushish pasdan index.html ga , yangi bloglar caruselga ham qushish ✔
+2. ichiga kirish , a hreflar ham ✔
+3. search qismini qushish resize ham busin ✔
+4. searchni ishlatish , barcha bloglarchiqadigan joy , qushimchalar 9 ta dan kurrsatadi ishlaydi searchd ham 9 tadan kursatadi ✔
+5. category larga kirsin , bloglar kurinsin navbarga ✔
+6. barcha narsalarni moslashtirish lorem lar urniga yozish , telegram botka utish , telegram va istemol.uz saytidan barcha narsani kuchirish ❌
+7. tillar 3 ta ru|en|uz ❌
+8. admin panel qismini qushish , tug'irlash , urganish ❌
+9. test 3 odam tomonidan akam , uzim , buyurtmachi ❌ 
+10. sotish va pulni olish ❌ 
